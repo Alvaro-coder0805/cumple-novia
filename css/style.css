@@ -1,0 +1,261 @@
+/* styles.css */
+
+body {
+    font-family: 'Open Sans', sans-serif;
+    background: linear-gradient(to bottom right, #ffccff, #ffe6e6);
+    color: #333;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    overflow-x: hidden;
+}
+
+.overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(255, 182, 193, 0.8);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    animation: fadeOut 3s forwards;
+}
+
+@keyframes fadeOut {
+    0% { opacity: 1; }
+    100% { opacity: 0; display: none; }
+}
+
+.overlay h1 {
+    font-family: 'Dancing Script', cursive;
+    font-size: 48px;
+    color: #ff69b4;
+}
+
+.main-content {
+    margin-top: 100px;
+    padding: 20px;
+    animation: fadeIn 3s ease-in;
+}
+
+@keyframes fadeIn {
+    0% { opacity: 0; transform: translateY(-20px); }
+    100% { opacity: 1; transform: translateY(0); }
+}
+
+.profile-pic {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    margin-bottom: 20px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+}
+
+.message {
+    font-size: 24px;
+    color: #ff1493;
+    font-weight: bold;
+    margin-bottom: 40px;
+}
+
+.letter {
+    margin: 20px auto;
+    width: 80%;
+    background: rgba(255, 255, 255, 0.8);
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+}
+
+.animated-text {
+    font-family: 'Dancing Script', cursive;
+    font-size: 20px;
+    color: #ff69b4;
+    animation: textFadeIn 5s ease-in;
+}
+
+.animated-text.delay {
+    animation-delay: 2s;
+}
+
+@keyframes textFadeIn {
+    0% { opacity: 0; }
+    100% { opacity: 1; }
+}
+
+.final-message {
+    margin-top: 40px;
+    font-size: 28px;
+    color: #ff69b4;
+}
+
+.hearts {
+    margin-top: 20px;
+    font-size: 24px;
+    animation: heartBeat 2s infinite;
+}
+
+@keyframes heartBeat {
+    0%, 100% { transform: scale(1); }
+    50% { transform: scale(1.2); }
+}
+
+.card2 {
+    position: relative;
+    text-align: center;
+    color: white;
+    border: none;
+    border-radius: 10px;
+    margin: 20px 37vw;
+    width:20% ;
+}
+
+.card2-img {
+    border-radius: 10px;
+    opacity: 0.8;
+    height: 200px;
+}
+
+.card2-img-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    opacity: 0;
+    transition: opacity 0.5s;
+}
+
+.card2:hover .card2-img-overlay {
+    opacity: 1;
+}
+
+.card2-title {
+    font-family: 'Dancing Script', cursive;
+    font-size: 30px;
+    margin-bottom: 10px;
+    color: #ffccff;
+}
+
+.card2-text {
+    font-size: 18px;
+    color: #fff;
+}
+
+.card-img-top{
+    width: 200px;
+    height: 250px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    object-fit: cover;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
+    transition: transform 0.3s ease-in-out;
+    }
+.card-img-top:hover{
+  transform: scale(1.05);   
+}
+    
+
+main{
+    display: flex;
+    margin: 0px 200px 0px 350px;
+}
+.section1{
+    margin: 40px 20px 0px 0px ;
+}
+.section2{
+    margin: 40px 0px 0px 20px ;
+}
+.poema1{
+    text-align: center;
+    margin: auto;
+    font-weight: bold;
+    color: black;
+    
+}
+h1{
+    color: #ff1493;
+    font-weight: bold;
+    margin-bottom: 40px;
+}
+iframe{
+    border-radius: 10px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
+    transition: transform 0.3s ease-in-out;
+    
+    
+}
+
+iframe:hover {
+    transform: scale(1.05);
+}
+.swiper {
+    width: 100%;
+    padding-bottom: 20px; /* Ajusta o elimina este padding si es necesario */
+  }
+  
+  .swiper-slide {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: auto;
+  }
+  
+  .card {
+    margin: 0; /* Asegúrate de que no haya margen innecesario */
+  }
+  
+  
+  @media (max-width: 768px) {
+      
+      .swiper{
+        flex: 1 1 200%; 
+      }
+      .card2{
+        margin: 0px 0px 0px 155px;
+      }
+      .card2-img-overlay {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 34vw;
+        height: 98%;
+        background-color: rgba(0, 0, 0, 0.5);
+        border-radius: 10px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        opacity: 0;
+        transition: opacity 0.5s;
+        margin:  0px 50px 0px 0px;
+    }
+    
+    }
+    @media screen and (max-width: 600px) {
+      main{
+        display: block;
+        margin: 0px 0px 0px 40px;
+}
+.section1{
+    margin: 40px 20px 20px 0px ;
+}
+.section2{
+    margin: -500px 0px 300px 20px ;
+
+      }
+.aside2{
+    margin: 200px 0px 0px 0px;
+}
+
+    }
+
+    
